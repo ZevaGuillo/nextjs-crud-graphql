@@ -6,7 +6,7 @@ let _client: Client | null = null;
 export const getUrqlClient = () => {
   if (!_client) {
     _client = createClient({
-      url: "https://swapi-graphql.netlify.app/.netlify/functions/index",
+      url: "http://localhost:3001/graphql",
       requestPolicy: "cache-and-network",
       exchanges: [cacheExchange, fetchExchange],
     });

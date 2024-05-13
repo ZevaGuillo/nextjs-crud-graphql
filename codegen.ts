@@ -2,8 +2,8 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "https://swapi-graphql.netlify.app/.netlify/functions/index",
-  documents: "graphql/**/*.graphql",
+  schema: "http://localhost:3001/graphql",
+  documents: "graphql/*.graphql",
   generates: {
     // generate types.ts
     "graphql/types.ts": { plugins: ["typescript"] },

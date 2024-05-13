@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { getUrqlClient } from "@/lib/urql";
+import { getUrqlClient } from "@/app/lib/urql";
 import {
   SignupDocument,
   SignupMutation,
@@ -28,12 +28,11 @@ export default async function Home() {
 
   return (
     <main className="overflow-x-hidden">
-      <Navbar />
       <section className="relative overflow-hidden flex flex-col justify-between rounded-[2rem] mx-4 h-screen bg-blue-400">
         <div className="font-bold text-[20vw] text-center leading-tight">
           <p>Stickers</p>
           <div className="absolute bottom-0 w-[50vw] p-6  h-[70vh] left-1/2 transform -translate-x-1/2">
-            <Image src={"/stickerHome.svg"} alt="stickerHome" fill className="object-cover object-top"/>
+            <Image src={"/stickerHome.svg"} alt="stickerHome" fill className="transition-all object-cover object-top"/>
           </div>
           <p>
           </p>

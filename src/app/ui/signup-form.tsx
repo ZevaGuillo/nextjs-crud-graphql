@@ -4,11 +4,14 @@ import { useActionState } from 'react'
 import { signup } from '@/app/actions/auth'
 import { useFormStatus } from 'react-dom'
  
+
+
+
 export function SignupForm() {
   const [state, action] = useActionState(signup, undefined)
  
   return (
-    <form action={action}>
+    <form action={action} className='text-red-600'>
       <div>
         <label htmlFor="name">Name</label>
         <input id="name" name="name" placeholder="Name" />

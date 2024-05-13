@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/ui/navbar";
 
 const inter_tight = Inter_Tight({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter_tight.className}>{children}</body>
+      <body className={inter_tight.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

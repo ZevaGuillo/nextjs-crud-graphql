@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className=" py-4 z-10 w-full items-center justify-center lg:flex">
-      <div className="justify-center w-full mx-4 rounded-2xl bg-slate-800">
-        <div className="flex flex-col w-full px-8 py-2 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-2 max-w-7xl">
+    <nav className=" py-4 z-10 w-screen items-center justify-center lg:flex">
+      <div className="justify-center w-screen mx-4 rounded-2xl bg-slate-800">
+        <div className="flex flex-col w-full px-8 py-2 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-5 ">
           <div className="flex flex-row items-center justify-between text-white">
             <a
               className="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-white"
@@ -73,12 +74,12 @@ const Navbar = () => {
               About
             </a>
 
-            <a
+            <Link
               className="inline-flex items-center justify-center w-full h-8 gap-3 px-5 py-3 text-xs font-medium text-white duration-200 bg-gray-900 rounded-lg md:w-auto hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-white"
-              href="#_"
+              href="/auth"
               role="button">
               Login
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

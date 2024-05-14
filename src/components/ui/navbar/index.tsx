@@ -76,9 +76,9 @@ const Navbar = () => {
 
             <Link
               className="inline-flex items-center justify-center w-full h-8 gap-3 px-5 py-3 text-xs font-medium text-white duration-200 bg-gray-900 rounded-lg md:w-auto hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-white"
-              href="/auth"
+              href="/signup"
               role="button">
-              Login
+              Sign In
             </Link>
           </nav>
         </div>

@@ -12,10 +12,8 @@ const page = () => {
                 <CloseModal/>
             </div>
             {/* <SignIn/> */}
-            <p>HOLA</p>
-            <Link href="/login">
-              login
-            </Link>
+            <p>login</p>
+            <Link href="/signup">sign up</Link>
         </div>
     </ModalLayout>
   );

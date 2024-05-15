@@ -21,9 +21,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter_tight.className}>
 
+
         <Navbar />
-        {children}
-        {authModal}
+        <main 
+        // className="pt-[5.5rem]"
+        >
+          {children}
+          {authModal}
+        </main>
       </body>
     </html>
   );

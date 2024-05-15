@@ -4,11 +4,11 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className=" py-4 z-10 w-screen items-center justify-center lg:flex">
-      <div className="justify-center w-screen mx-4 rounded-2xl bg-slate-800">
+      <div className=" justify-center w-screen mx-4 rounded-2xl bg-slate-900">
         <div className="flex flex-col w-full px-8 py-2 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-5 ">
-          <div className="flex flex-row items-center justify-between text-white">
+          <div className="flex flex-row items-center justify-between text-foreground">
             <a
-              className="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-white"
+              className="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-foreground"
               href="/">
               <span> ❖ </span>
               <span>Zevaguillo</span>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 </span>
                 <input
                   type="text"
-                  className="w-full py-2 pl-10 pr-4 text-slate-900 bg-slate-700 border border-slate-600 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500 sm:text-sm rounded-xl placeholder:text-gray-400 focus:border-blue-500"
+                  className="w-full py-2 pl-10 pr-4 text-foreground bg-background opacity-70 border border-foreground focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500 sm:text-sm rounded-xl placeholder:text-gray-400 focus:border-blue-500"
                   placeholder="Search"
                   aria-label="Search"
                   data-dashlane-rid="3dad5566cea1ea8b"
@@ -64,20 +64,20 @@ const Navbar = () => {
             </div>
 
             <a
-              className="hover:text-white focus:outline-none focus:text-gray-200 md:ml-auto"
+              className="text-foreground focus:outline-none focus:text-gray-200 md:ml-auto"
               href="#_">
               Features
             </a>
             <a
-              className="hover:text-white focus:outline-none focus:text-gray-200"
+              className="text-foreground focus:outline-none focus:text-gray-200"
               href="#_">
               About
             </a>
 
             <Link
-              className="inline-flex items-center justify-center w-full h-8 gap-3 px-5 py-3 text-xs font-medium text-white duration-200 bg-gray-900 rounded-lg md:w-auto hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-white"
-              href="/signup"
-              role="button">
+              className="inline-flex text-foreground items-center rounded-xl justify-center w-full h-8 gap-3 px-5 py-3 text-xs font-medium duration-200 bg-slate-700 md:w-auto hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-white"
+              href="/login"
+              >
               Sign In
             </Link>
           </nav>

@@ -1,10 +1,10 @@
+import { SignupForm } from "@/app/ui/SignupForm";
 import React from "react";
-import { SignupForm } from "../../ui/signup-form";
 
 export default function page() {
   return (
     <div>
-      signup
+      <SignupForm/>
     </div>
   );
 }

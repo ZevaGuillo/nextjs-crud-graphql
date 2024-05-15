@@ -7,7 +7,7 @@ import { useFormStatus } from 'react-dom'
 
 
 
-export function SignupForm() {
+export function SignupForm2() {
   const [state, action] = useActionState(signup, undefined)
  
   return (

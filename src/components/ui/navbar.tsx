@@ -76,7 +76,7 @@ const Navbar = () => {
 
             <Link
               className="inline-flex text-foreground items-center rounded-xl justify-center w-full h-8 gap-3 px-5 py-3 text-xs font-medium duration-200 bg-slate-700 md:w-auto hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-white"
-              href="/login"
+              href="/signup"
               >
               Sign In
             </Link>

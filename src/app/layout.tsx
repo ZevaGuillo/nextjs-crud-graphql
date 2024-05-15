@@ -12,23 +12,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  authModal
+  authModal,
 }: Readonly<{
   children: React.ReactNode;
   authModal: React.ReactNode;
 }>) {
+  
+
   return (
     <html lang="en">
       <body className={inter_tight.className}>
 
-
-        <Navbar />
-        <main 
-        // className="pt-[5.5rem]"
-        >
-          {children}
-          {authModal}
-        </main>
+          <Navbar />
+          <main
+          // className="pt-[5.5rem]"
+          >
+            {children}
+            {authModal}
+          </main>
       </body>
     </html>
   );
